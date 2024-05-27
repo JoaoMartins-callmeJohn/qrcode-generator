@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Paste your link, grab your qr code</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="https://github.com/Autodesk-Forge/learn.forge.viewmodels/raw/master/img/favicon.ico">
+  <!-- Shoelace & qrcode -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>
+  <!-- this project files -->
+  <link href="main.css" rel="stylesheet" />
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <sl-qr-code class="qr-code" value="https://shoelace.style/" background="white"></sl-qr-code>
+    <sl-color-picker
+      label="Select a color"
+      swatches="
+        #d0021b; #f5a623; #f8e71c; #8b572a; #7ed321; #417505; #bd10e0; #9013fe;
+        #4a90e2; #50e3c2; #b8e986; #000; #444; #888; #ccc; #fff;
+      "
+      value="black"
+    ></sl-color-picker>
+    <sl-input class="input" clearable></sl-input>
+    <sl-button class="button">Download</sl-button>
+  </div>
+</body>
+
+</html>

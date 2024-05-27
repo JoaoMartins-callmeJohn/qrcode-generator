@@ -1,0 +1,10 @@
+.container{
+  text-align: center;
+  margin-top: 2em;
+}
+
+.container .qr-code,
+.container .input,
+.container .button{
+  margin-top: 1em;
+}
